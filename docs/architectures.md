@@ -33,3 +33,5 @@ All the components run at the same machine.
 **Worker node 3**:
 
 - Airflow Worker
+
+_Web Server => Metastore => Scheduler => Executor => Queue => Workers_

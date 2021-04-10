@@ -62,6 +62,18 @@ chmod +x airflow.sh
 ./airflow.sh info
 ```
 
+**Running**:
+
+```sh
+docker compose up
+```
+
+Or simple
+
+```sh
+Make run
+```
+
 **API usage**
 
 Example:
