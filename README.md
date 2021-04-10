@@ -4,6 +4,32 @@
 
 Custom airflow base for local routines automation
 
+### What is Airflow?
+
+Open Source platform to programmatically _author_, _schedule_ and _monitor_ workflows.
+
+### What Airflow is not.
+
+Not a Streaming or a data processing framework.
+
+### Why Airflow?
+
+- Automatic retry on fail
+- Manage complex tasks
+- Monitor tasks
+- User interface
+
+### Advantages
+
+- Dynamic
+- Scalable
+- Interactive
+- Extensible
+
+### Disadvantages
+
+Not meant to process terabytes of data.
+
 ## Usage
 
 > On Linux, the mounted volumes in container use the native Linux filesystem user/group permissions, so you have to make sure the container and host computer have matching file permissions.
