@@ -1,4 +1,0 @@
-pytest
-slackclient
-pandas
-tabulate
