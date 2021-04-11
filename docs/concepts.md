@@ -37,8 +37,6 @@ Instance of an Operator
 
 Represents a specific run of a task: DAG + TASK + Point in time
 
-### Task Life Cycle
-
 ## Dependencies
 
 Relationships between tasks/OPerators
@@ -47,4 +45,3 @@ Relationships between tasks/OPerators
 - `set_downstream` or `>>`
 
 Operator A => Operator B => Operator C
-s
