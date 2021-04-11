@@ -20,6 +20,9 @@ Not a Streaming or a data processing framework.
 - Manage complex tasks
 - Monitor tasks
 - User interface
+  - UI
+  - CLI
+  - REST API
 
 ### Advantages
 
