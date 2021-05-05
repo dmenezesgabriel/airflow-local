@@ -77,7 +77,106 @@ Or simple
 Make run
 ```
 
-**API usage**
+## Defaults
+
+- Login: airflow
+- Password: airflow
+
+## Command Line
+
+### Database
+
+**Initializing database**:
+
+Once the webserver container is up
+
+```sh
+docker-compose exec airflow-webserver /bin/sh
+```
+
+And the command line type:
+
+```sh
+airflow db init
+```
+
+_to update database schemas run_:
+
+```
+airflow db upgrade
+```
+
+**Drop database**:
+
+Once the webserver container is up
+
+```sh
+docker-compose exec airflow-webserver /bin/sh
+```
+
+And the command line type:
+
+```sh
+airflow db reset
+```
+
+### User commands
+
+- **Start webserver**:
+
+```sh
+airflow webserver
+```
+
+- **Start scheduler**:
+
+```sh
+airflow scheduler
+```
+
+- **Start worker**:
+
+```sh
+airflow worker
+```
+
+- **Pause dags**:
+
+```sh
+airflow dags pause
+```
+
+- **Unpause dags**:
+
+```sh
+airflow dags unpause
+```
+
+- **List dags**:
+
+```sh
+airflow dags list
+```
+
+- **List tasks of an DAG**:
+
+```sh
+airflow tasks list <dag_id>
+```
+
+- **Test tasks of an DAG**:
+
+```sh
+airflow tasks test <dag_id> <task_id> <yyyy-mm-dd(execution_past_date)>
+```
+
+- **Rerun past DAG runs**:
+
+```sh
+airflow dags backfill -s <yyyy-mm-dd(start_date)> -e <yyyy-mm-dd(end_date)> --reset_dagruns(optional) <dag_id>
+```
+
+## API usage
 
 Example:
 
